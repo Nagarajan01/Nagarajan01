@@ -37,6 +37,8 @@ def update(request, id):
 		form.save()
 	return render(request, 'update_view.html', {'form': form})
 
+print("changes")
+
 
 
 
