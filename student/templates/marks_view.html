@@ -1,0 +1,21 @@
+<table border = '2'>
+<tr>
+    <th>ID</th>
+    <th>M1</th>
+    <th>M2</th>
+    <th>M3</th>
+    <th>M4</th>
+    <th>M5</th>
+</tr>
+{% for m in form %}
+<tr>
+    <td>{{m.id}}</td>
+    <td>{{m.sub1}}</td>
+    <td>{{m.sub2}}</td>
+    <td>{{m.sub3}}</td>
+    <td>{{m.sub4}}</td>
+    <td>{{m.sub5}}</td>
+</tr>
+</table>
+<td>  <a href ='http://127.0.0.1:8000/students/update_marks/{{m.id}}'><button>edit</button></a></td>
+{% endfor %}
